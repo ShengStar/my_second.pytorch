@@ -3,7 +3,7 @@ model: {
     voxel_generator {
       point_cloud_range : [0, -39.68, -3, 69.12, 39.68, 1]
       voxel_size : [0.16, 0.16, 4]
-      max_number_of_points_per_voxel : 100
+      max_number_of_points_per_voxel : 10
     }
     num_class: 1
     voxel_feature_extractor: {
@@ -99,7 +99,7 @@ train_input_reader: {
   record_file_path: "/home/lixusheng/kitti_original_second/kitti_train.tfrecord"
   class_names: ["Car"]
   max_num_epochs : 160
-  batch_size: 20
+  batch_size: 2
   prefetch_size : 25
   max_number_of_voxels: 12000
   shuffle_points: true
